@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seminar Web Kampus 2026</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Seminar Web Kampus 2026</h1>
+      <p class="tagline">Belajar HTML dan CSS Flexbox bareng, gratis untuk mahasiswa</p>
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#rundown">Rundown</a>
+        <a href="#daftar">Daftar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="tentang">
+        <img src="images/kegiatan.jpeg" alt="Peserta seminar duduk di aula kampus menyimak pemateri">
+        <div>
+          <h2>Tentang Kegiatan</h2>
+          <p>
+            Seminar ini membahas dasar <strong>HTML semantik</strong> dan
+            <em>tata letak CSS Flexbox</em> untuk mahasiswa Fakultas Sains dan
+            Teknologi Informasi.
+          </p>
+          <a href="https://developer.mozilla.org/id/docs/Learn" target="_blank" rel="noreferrer">Panduan belajar web di MDN</a>
+        </div>
+      </section>
+
+      <section id="rundown">
+        <div>
+          <h2>Syarat Peserta</h2>
+          <ul>
+            <li>Mahasiswa aktif Universitas Widya Gama Malang</li>
+            <li>Membawa laptop dan kartu mahasiswa</li>
+            <li>Mengisi formulir pendaftaran</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Alur Pendaftaran</h2>
+          <ol>
+            <li>Isi data diri</li>
+            <li>Verifikasi oleh panitia</li>
+            <li>Kirim pendaftaran</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="daftar">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#" method="post">
+          <label for="nama">Nama Lengkap</label>
+          <input id="nama" name="nama" type="text" required>
+
+          <label for="surel">Surel</label>
+          <input id="surel" name="surel" type="email" required>
+
+          <label for="telepon">No. Telepon</label>
+          <input id="telepon" name="telepon" type="tel">
+
+          <label for="tempat">Tempat Lahir</label>
+          <input id="tempat" name="tempat" type="text">
+
+          <label for="lahir">Tanggal Lahir</label>
+          <input id="lahir" name="lahir" type="date">
+
+          <label for="prodi">Program Studi</label>
+          <select id="prodi" name="prodi">
+            <option value="si">Sistem Informasi</option>
+            <option value="ti">Teknik Informatika</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+
+          <div class="setuju">
+            <input id="setuju" name="setuju" type="checkbox" required>
+            <label for="setuju">Saya menyetujui syarat dan ketentuan</label>
+          </div>
+
+          <button type="submit">Kirim Pendaftaran</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Pemrograman Web · Informasi Panitia Kegiatan</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+:root {
+  --ungu: #4338ca;
+  --ungu-gelap: #312e81;
+  --ungu-muda: #eef2ff;
+  --aksen: #f59e0b;
+  --teks: #1e1b4b;
+  --putih: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--teks);
+  background: var(--ungu-muda);
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 56px 20px 40px;
+  text-align: center;
+  color: var(--putih);
+  background: linear-gradient(135deg, var(--ungu-gelap), var(--ungu));
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin: 0;
+  color: #c7d2fe;
+  font-size: 1.05rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+nav a {
+  color: var(--putih);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--teks);
+  background: var(--aksen);
+  border-color: var(--aksen);
+  outline: none;
+}
+
+/* ---------- Konten ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+section {
+  padding: 28px;
+  background: var(--putih);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(67, 56, 202, 0.1);
+}
+
+h2 {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  font-size: 1.4rem;
+  color: var(--ungu);
+  border-bottom: 3px solid var(--aksen);
+  display: inline-block;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+strong {
+  color: var(--ungu);
+}
+
+/* Tentang */
+#tentang {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+#tentang img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(30, 27, 75, 0.25);
+}
+
+#tentang div {
+  flex: 1 1 280px;
+}
+
+#tentang a {
+  display: inline-block;
+  color: var(--ungu);
+  font-weight: 600;
+}
+
+/* Rundown */
+#rundown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#rundown div {
+  flex: 1 1 260px;
+  padding: 20px;
+  background: var(--ungu-muda);
+  border-radius: 12px;
+}
+
+#rundown h2 {
+  font-size: 1.2rem;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+li::marker {
+  color: var(--aksen);
+  font-weight: 700;
+}
+
+/* ---------- Formulir ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  padding: 12px 14px;
+  font-size: 1rem;
+  color: var(--teks);
+  background: var(--ungu-muda);
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background: var(--putih);
+  border-color: var(--ungu);
+}
+
+.setuju {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.setuju label {
+  font-weight: 400;
+}
+
+button {
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--putih);
+  background: var(--ungu);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  color: var(--teks);
+  background: var(--aksen);
+  outline: none;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--putih);
+  background: var(--ungu-gelap);
+}
+
+footer p {
+  margin: 0;
+}
